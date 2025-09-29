@@ -1,63 +1,71 @@
 #include <stdio.h>
 
 int main(){
-    printf("Desafio cadastro das cartas\n\n");
+    printf("Desafio super trunfo cadastro de cartas  nivel novato\n");
 
     //Inicio da declaração das variaveis carta 1
-    char estadocarta1;                     // Letra estado da cidade
-    char codigocarta1[5];                  // Código identificador
-    char nomecidadecarta1[50];             // Nome da cidade 
-    int populacao1;                        // População                     
-    float areacarta1;                      // Área em km² 
-    float pibcarta1;                       // Pib (Produto interno bruto) 
-    int numeropontosturisticos1;           // Número de pontos turísticos 
+    char numerocarta1[1];                       // numero da carta 1
+    char estado1[5];                            // Letra estado da cidade 1
+    char codigo1[3];                            // Código 1
+    char nomecidadecarta1[9];                   // Nome da cidade 1
+    int populacao1;                             // População  1                   
+    float areacarta1;                           // Área em km² 1
+    float pibcarta1;                            // Pib1 (Produto interno bruto) 
+    int numeropontosturisticos1;                // Número de pontos turísticos 1
     //Fim declaração de variaveis carta 1
 
     //inicio declaração de variaveis carta 2
-    char estadocarta2;
-    char codigocarta2[3];
-    char nomecidadecarta2[45];
-    int populacao2;
-    float areacarta2;
-    float pibcarta2;
-    int numeropontosturisticos2;
-    //Fim declaração de variaveis carta 2.
+    char numerocarta2[1];                      // numero da carta 2
+    char estado2[16];                          // Letra estado da cidade 2
+    char codigo2[3];                           // Código 2
+    char nomecidadecarta2[5];                  // Nome da cidade 2
+    int populacao2;                            // População  2                   
+    float areacarta2;                          // Área em km² 2
+    float pibcarta2;                           // Pib2 (Produto interno bruto) 
+    int numeropontosturisticos2;               // Número de pontos turísticos 2
+    //Fim declaração de variaveis carta 2
 
     //Inicio da entrada de dados (printf e scanf)
    
-    printf("insira os dados da carta 1\n\n");
+    printf("insira os dados da carta 1\n");
 
     //Entrada de dados carta1
-    printf("Digite Estado (A-H): \n");
-    scanf(" %c", &estadocarta1);
-    
-    printf("Digite o código (01-04): \n");
-    scanf("%s", codigocarta1);
+    printf("Digite o numero da carta 1\n");
+    scanf("%s", numerocarta1);
 
-    printf("Digite o nome da cidade: \n");
+    printf("Digite Estado:\n");
+    scanf(" %s", estado1);
+    
+    printf("Digite o codigo:\n");
+    scanf("%s", codigo1);
+
+    printf("Digite o nome da cidade:\n");
     scanf("%s", nomecidadecarta1);
     
-    printf("Digite a população: \n");
+    printf("Digite a populacao:\n");
     scanf("%d", &populacao1);
 
-    printf("Informe a área em km²: \n");
+    printf("Informe a área em km²:\n");
     scanf("%f", &areacarta1);
 
-    printf("Informe o Pib: \n");
+    printf("Informe o Pib:\n");
     scanf("%f", &pibcarta1);
 
-    printf("Insira a quantidade de pontos turistícos: \n");
+    printf("Insira a quantidade de pontos turistícos:\n");
     scanf("%d", &numeropontosturisticos1);
 
 
-    printf("=== insira os dados da carta 2 ===\n\n");
+    printf("insira os dados da carta 2\n");
 
     //Entrada de dados carta2.
-    printf("Digite o Estado (A-H): \n");
-    scanf(" %c", &estadocarta2);
+    printf("Digite o numero da carta 2\n");
+    scanf("%s", numerocarta2);
+
+    printf("Digite o Estado:\n");
+    scanf(" %s", &estado2);
     
-    printf("Digite o código (01-04): \n");
-    scanf("%s", codigocarta2);
+    printf("Digite o codigo:\n");
+    scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: \n");
     scanf("%s", nomecidadecarta2);
@@ -65,50 +73,54 @@ int main(){
     printf("Digite a população: \n");
     scanf("%d", &populacao2);
 
-    printf("Informe a área em km²: \n");
+    printf("Informe a área em km²:\n");
     scanf(" %f", &areacarta2);
 
-    printf("Informe o Pib: \n");
+    printf("Informe o Pib:\n");
     scanf("%f", &pibcarta2);
 
-    printf("Insira a quantidade de pontos turistícos: \n");
+    printf("Insira a quantidade de pontos turistícos:\n");
     scanf("%d", &numeropontosturisticos2);
 
-    printf("==== Carta 1 ====\n");
+    printf("*** Carta 1 ***\n");
 
     //Saída de dados carta 1.
-    printf("Estado: %c \n", estadocarta1);
+    printf("numero: %d\n", numerocarta1);
 
-    printf("Código: %c%s \n", estadocarta1, codigocarta1);
+    printf("Estado: %s \n", estado1);
+
+    printf("Codigo: %s \n", codigo1);
 
     printf("Cidade: %s \n", nomecidadecarta1);
 
-    printf("População: %d\n", populacao1);
+    printf("Populacao: %d\n", populacao1);
 
-    printf("Área: %.2f Km²\n", areacarta1);
+    printf("Area: %.2f Km²\n", areacarta1);
 
     printf("Pib: %.2f Reais.\n", pibcarta1);
 
-    printf("Número de pontos turisticos: %d\n\n", numeropontosturisticos1);
+    printf("Numero de pontos turisticos: %d\n", numeropontosturisticos1);
     
     //Fim saída carta 1
 
-    printf("==== Carta 2 ====\n");
+    printf("*** Carta 2 ***\n");
 
     //Saída de dados carta 2
-    printf("Estado: %c \n", estadocarta2);
+    printf("numero: %d\n", numerocarta2);
 
-    printf("Código: %c%s \n", estadocarta2, codigocarta2);
+    printf("Estado: %s \n", estado2);
+
+    printf("Codigo: %s \n", codigo2);
 
     printf("Cidade: %s \n", nomecidadecarta2);
 
-    printf("População: %d\n", populacao2);
+    printf("Populacao: %d\n", populacao2);
 
-    printf("Área: %.2f Km².\n", areacarta2);
+    printf("Area: %.2f Km².\n", areacarta2);
 
     printf("Pib: %.2f Reais.\n", pibcarta2);
 
-    printf("Número de pontos turisticos: %d\n", numeropontosturisticos2);
+    printf("Numero de pontos turisticos: %d\n", numeropontosturisticos2);
     //Fim saída carta 2
     
 
