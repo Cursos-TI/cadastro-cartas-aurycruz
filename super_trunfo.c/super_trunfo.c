@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    printf("Desafio super trunfo cadastro de cartas  nivel novato\n");
+    printf("Desafio super trunfo   nivel novato\n");
 
     //Inicio da declaração das variaveis carta 1
     char numerocarta1[1];                       // numero da carta 1
